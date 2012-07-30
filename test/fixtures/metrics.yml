@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  status: MyString
+  visibility: MyString
+  startdate: 2012-07-26
+  enddate: 2012-07-26
+  level: MyString
+  frequency: MyString
+  usergroup: MyString
+  agentpermission: MyString
+  companypermission: MyString
+  expectedtime: MyString
+  permissionlevel: MyString
+  summarytype: MyString
+
+two:
+  name: MyString
+  status: MyString
+  visibility: MyString
+  startdate: 2012-07-26
+  enddate: 2012-07-26
+  level: MyString
+  frequency: MyString
+  usergroup: MyString
+  agentpermission: MyString
+  companypermission: MyString
+  expectedtime: MyString
+  permissionlevel: MyString
+  summarytype: MyString

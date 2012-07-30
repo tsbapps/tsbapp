@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @metric.name %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @metric.status %>
+</p>
+
+<p>
+  <b>Visibility:</b>
+  <%= @metric.visibility %>
+</p>
+
+<p>
+  <b>Startdate:</b>
+  <%= @metric.startdate %>
+</p>
+
+<p>
+  <b>Enddate:</b>
+  <%= @metric.enddate %>
+</p>
+
+<p>
+  <b>Level:</b>
+  <%= @metric.level %>
+</p>
+
+<p>
+  <b>Frequency:</b>
+  <%= @metric.frequency %>
+</p>
+
+<p>
+  <b>Usergroup:</b>
+  <%= @metric.usergroup %>
+</p>
+
+<p>
+  <b>Agentpermission:</b>
+  <%= @metric.agentpermission %>
+</p>
+
+<p>
+  <b>Companypermission:</b>
+  <%= @metric.companypermission %>
+</p>
+
+<p>
+  <b>Expectedtime:</b>
+  <%= @metric.expectedtime %>
+</p>
+
+<p>
+  <b>Permissionlevel:</b>
+  <%= @metric.permissionlevel %>
+</p>
+
+<p>
+  <b>Summarytype:</b>
+  <%= @metric.summarytype %>
+</p>
+
+
+<%= link_to 'Edit', edit_metric_path(@metric) %> |
+<%= link_to 'Back', metrics_path %>

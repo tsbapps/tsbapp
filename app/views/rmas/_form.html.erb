@@ -1,0 +1,29 @@
+<%= form_for(@rma) do |f| %>
+  <% if @rma.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rma.errors.count, "error") %> prohibited this rma from being saved:</h2>
+
+      <ul>
+      <% @rma.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :dailycount %><br />
+    <%= f.number_field :dailycount %>
+  </div>
+  <div class="field">
+    <%= f.label :mtd %><br />
+    <%= f.number_field :mtd %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

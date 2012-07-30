@@ -1,0 +1,47 @@
+<h1>Listing metrics</h1>
+
+<table class="table table-striped table-bordered table-condensed">
+  <tr>
+    <th>Name</th>
+    <th>Status</th>
+    <th>Visibility</th>
+    <th>Startdate</th>
+    <th>Enddate</th>
+    <th>Level</th>
+    <th>Frequency</th>
+    <th>Usergroup</th>
+    <th>Agentpermission</th>
+    <th>Companypermission</th>
+    <th>Expectedtime</th>
+    <th>Permissionlevel</th>
+    <th>Summarytype</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @metrics.each do |metric| %>
+  <tr>
+    <td><%= metric.name %></td>
+    <td><%= metric.status %></td>
+    <td><%= metric.visibility %></td>
+    <td><%= metric.startdate %></td>
+    <td><%= metric.enddate %></td>
+    <td><%= metric.level %></td>
+    <td><%= metric.frequency %></td>
+    <td><%= metric.usergroup %></td>
+    <td><%= metric.agentpermission %></td>
+    <td><%= metric.companypermission %></td>
+    <td><%= metric.expectedtime %></td>
+    <td><%= metric.permissionlevel %></td>
+    <td><%= metric.summarytype %></td>
+    <td><%= link_to 'Show', metric %></td>
+    <td><%= link_to 'Edit', edit_metric_path(metric) %></td>
+    <td><%= link_to 'Destroy', metric, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Metric', new_metric_path %>

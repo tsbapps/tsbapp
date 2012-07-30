@@ -1,0 +1,69 @@
+<%= form_for(@metric) do |f| %>
+  <% if @metric.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@metric.errors.count, "error") %> prohibited this metric from being saved:</h2>
+
+      <ul>
+      <% @metric.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :visibility %><br />
+    <%= f.text_field :visibility %>
+  </div>
+  <div class="field">
+    <%= f.label :startdate %><br />
+    <%= f.date_select :startdate %>
+  </div>
+  <div class="field">
+    <%= f.label :enddate %><br />
+    <%= f.date_select :enddate %>
+  </div>
+  <div class="field">
+    <%= f.label :level %><br />
+    <%= f.text_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :frequency %><br />
+    <%= f.text_field :frequency %>
+  </div>
+  <div class="field">
+    <%= f.label :usergroup %><br />
+    <%= f.text_field :usergroup %>
+  </div>
+  <div class="field">
+    <%= f.label :agentpermission %><br />
+    <%= f.text_field :agentpermission %>
+  </div>
+  <div class="field">
+    <%= f.label :companypermission %><br />
+    <%= f.text_field :companypermission %>
+  </div>
+  <div class="field">
+    <%= f.label :expectedtime %><br />
+    <%= f.text_field :expectedtime %>
+  </div>
+  <div class="field">
+    <%= f.label :permissionlevel %><br />
+    <%= f.text_field :permissionlevel %>
+  </div>
+  <div class="field">
+    <%= f.label :summarytype %><br />
+    <%= f.text_field :summarytype %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

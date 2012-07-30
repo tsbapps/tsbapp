@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  dailycount: 1
+  mtd: 1
+
+two:
+  title: MyString
+  dailycount: 1
+  mtd: 1
